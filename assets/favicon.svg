@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-label="DigiVibeTech">
+  <defs>
+    <linearGradient id="gold" x1="18%" y1="8%" x2="82%" y2="92%">
+      <stop offset="0%" stop-color="#FFE08A"/>
+      <stop offset="38%" stop-color="#F0C14B"/>
+      <stop offset="72%" stop-color="#D4A017"/>
+      <stop offset="100%" stop-color="#A67C00"/>
+    </linearGradient>
+    <linearGradient id="goldBright" x1="20%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1B8"/>
+      <stop offset="45%" stop-color="#F6D265"/>
+      <stop offset="100%" stop-color="#C8960C"/>
+    </linearGradient>
+    <radialGradient id="field" cx="50%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#1A2744"/>
+      <stop offset="100%" stop-color="#0B1224"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="shieldField">
+      <path d="M64 18.5c16.8 0 30.2 3.7 37.2 7.5 1.1.6 1.8 1.7 1.8 3V56c0 21.2-12.4 39-34.2 49.4a8.5 8.5 0 0 1-7.6 0C39.4 95 27 77.2 27 56V29c0-1.3.7-2.4 1.8-3 7-3.8 20.4-7.5 37.2-7.5Z"/>
+    </clipPath>
+  </defs>
+  <g id="mark-outer">
+    <rect width="128" height="128" rx="18" fill="#0A0C10"/>
+    <path filter="url(#soft)" fill="url(#gold)" d="M64 10c18.5 0 33.5 4.2 42 8.8 2.2 1.2 3.6 3.5 3.6 6V56c0 24.8-14.8 45.6-39.8 57.4a12 12 0 0 1-11.6 0C33.2 101.6 18.4 80.8 18.4 56V24.8c0-2.5 1.4-4.8 3.6-6C30.5 14.2 45.5 10 64 10Z"/>
+    <path fill="url(#field)" d="M64 18.5c16.8 0 30.2 3.7 37.2 7.5 1.1.6 1.8 1.7 1.8 3V56c0 21.2-12.4 39-34.2 49.4a8.5 8.5 0 0 1-7.6 0C39.4 95 27 77.2 27 56V29c0-1.3.7-2.4 1.8-3 7-3.8 20.4-7.5 37.2-7.5Z"/>
+  </g>
+  <g id="mark-inner" clip-path="url(#shieldField)">
+    <g transform="translate(11.5 13.2) scale(1.42)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 32 46 L 15 18 H 49 C 59 18 59 46 32 46 L 49 18 H 32 V 46" stroke="#5C3E00" stroke-width="5.6"/>
+      <path d="M 32 46 L 15 18 H 49 C 59 18 59 46 32 46 L 49 18 H 32 V 46" stroke="url(#goldBright)" stroke-width="3.7"/>
+      <path d="M 32 46 L 15 18 H 49 C 59 18 59 46 32 46 L 49 18 H 32 V 46" stroke="#FFF6D0" stroke-width="1.15" stroke-opacity="0.88"/>
+    </g>
+  </g>
+</svg>
